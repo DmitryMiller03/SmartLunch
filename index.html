@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>SmartLunch</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header>
+ <div class="container">
+ <div class="logo">
+ <h1>SmartLunch</h1>
+ </div>
+ <nav>
+ <ul>
+ <li><a href="#how-it-works">Как это работает</a></li>
+ <li><a href="#benefits">Преимущества</a></li>
+ <li><a href="#reviews">Отзывы</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+ <section id="main">
+ <div class="container">
+ <h1>Ускорьте процесс обслуживания клиентов и увеличьте продажи</h1>
+ <p>SmartLunch - это система автоматического распознавания блюд, которая поможет вам увеличить скорость обслуживания клиентов и уменьшить количество ошибок</p>
+ <button>Начать сейчас</button>
+ </div>
+ </section>
+ <section id="how-it-works">
+ <div class="container">
+ <h2>Как работает SmartLunch</h2>
+ <p>SmartLunch использует камеру для распознавания блюд и автоматически рассчитывает сумму заказа</p>
+ <img src="image.jpg" alt="Пример работы системы">
+ </div>
+ </section>
+ <section id="benefits">
+ <div class="container">
+ <h2>Преимущества SmartLunch</h2>
+ <ul>
+ <li>Увеличение скорости обслуживания клиентов</li>
+ <li>Уменьшение количества ошибок</li>
+ <li>Увеличение продаж</li>
+ <li>Уменьшение затрат на персонал</li>
+ </ul>
+ <img src="image.jpg" alt="Пример преимуществ">
+ </div>
+ </section>
+ <section id="reviews">
+ <div class="container">
+ <h2>Отзывы наших клиентов</h2>
+ <ul>
+ <li>
+ <img src="image.jpg" alt="Изображение клиента">
+ <p>SmartLunch помог нам увеличить скорость обслуживания клиентов и уменьшить количество ошибок</p>
+ <span>Иван Иванов, ресторан "Бистро"</span>
+ </li>
+ </ul>
+ </div>
+ </section>
+ <footer>
+ <div class="container">
+ <p>&copy; 2024 SmartLunch</p>
+ </div>
+ </footer>
+ <script src="script.js"></script>
+</body>
+</html>
+/* styles.css */
+body {
+ font-family: Open Sans, sans-serif;
+ margin: 0;
+ padding: 0;
+}
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 20px;
+}
+.logo {
+ font-size: 24px;
+ font-weight: bold;
+ margin-bottom: 10px;
+}
+nav ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: space-between;
+}
+nav li {
+ margin-right: 20px;
+}
+nav a {
+ text-decoration: none;
+ color: #3498db;
+}
+nav a:hover {
+ color: #f1c40f;
+}
+#main {
+ background-color: #3498db;
+ color: #ffffff;
+ padding: 40px;
+ text-align: center;
+}
+#main h1 {
+ font-size: 36px;
+ margin-bottom: 10px;
+}
+#main p {
+ font-size: 18px;
+ margin-bottom: 20px;
+}
+#main button {
+ background-color: #f1c40f;
+ color: #3498db;
+ border: none;
+ padding: 10px 20px;
+ font-size: 18px;
+ cursor: pointer;
+}
+#main button:hover {
+ background-color: #ffffff;
+ color: #3498db;
+}
+#how-it-works {
+ background-color: #ffffff;
+ padding: 40px;
+}
+#how-it-works h2 {
+ font-size: 24px;
+ margin-bottom: 10px;
+}
+#how-it-works p {
+ font-size: 18px;
+ margin-bottom: 20px;
+}
+#how-it-works img {
+ width: 100%;
+ height: auto;
+ margin-bottom: 20px;
+}
+#benefits {
+ background-color: #3498db;
+ padding: 40px;
+}
+#benefits h2 {
+ font-size: 24px;
+ margin-bottom: 10px;
+}
+#benefits ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+#benefits li {
+ margin-bottom: 10px;
+}
+#benefits img {
+ width: 100%;
+ height: auto;
+ margin-bottom: 20px;
+}
+#reviews {
+ background-color: #ffffff;
+ padding: 40px;
+}
+#reviews h2 {
+ font-size: 24px;
+ margin-bottom: 10px;
+}
+#reviews ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+#reviews li {
+ margin-bottom: 20px;
+}
+#reviews img {
+ width: 100%;
+ height: auto;
+ margin-bottom: 10px;
+}
+footer {
+ background-color: #3498db;
+ padding: 10px;
+ text-align: center;
+ color: #ffffff;
+}
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+ const button = document.querySelector("button");
+ button.addEventListener("click", function () {
+ // редирект на страницу продукта
+ window.location.href = "product.html";
+ });
+});
