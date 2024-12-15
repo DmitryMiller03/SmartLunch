@@ -1,201 +1,165 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>SmartLunch</title>
- <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartLunch - Умная система распознавания блюд</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
- <header>
- <div class="container">
- <div class="logo">
- <h1>SmartLunch</h1>
- </div>
- <nav>
- <ul>
- <li><a href="#how-it-works">Как это работает</a></li>
- <li><a href="#benefits">Преимущества</a></li>
- <li><a href="#reviews">Отзывы</a></li>
- </ul>
- </nav>
- </div>
- </header>
- <section id="main">
- <div class="container">
- <h1>Ускорьте процесс обслуживания клиентов и увеличьте продажи</h1>
- <p>SmartLunch - это система автоматического распознавания блюд, которая поможет вам увеличить скорость обслуживания клиентов и уменьшить количество ошибок</p>
- <button>Начать сейчас</button>
- </div>
- </section>
- <section id="how-it-works">
- <div class="container">
- <h2>Как работает SmartLunch</h2>
- <p>SmartLunch использует камеру для распознавания блюд и автоматически рассчитывает сумму заказа</p>
- <img src="image.jpg" alt="Пример работы системы">
- </div>
- </section>
- <section id="benefits">
- <div class="container">
- <h2>Преимущества SmartLunch</h2>
- <ul>
- <li>Увеличение скорости обслуживания клиентов</li>
- <li>Уменьшение количества ошибок</li>
- <li>Увеличение продаж</li>
- <li>Уменьшение затрат на персонал</li>
- </ul>
- <img src="image.jpg" alt="Пример преимуществ">
- </div>
- </section>
- <section id="reviews">
- <div class="container">
- <h2>Отзывы наших клиентов</h2>
- <ul>
- <li>
- <img src="image.jpg" alt="Изображение клиента">
- <p>SmartLunch помог нам увеличить скорость обслуживания клиентов и уменьшить количество ошибок</p>
- <span>Иван Иванов, ресторан "Бистро"</span>
- </li>
- </ul>
- </div>
- </section>
- <footer>
- <div class="container">
- <p>&copy; 2024 SmartLunch</p>
- </div>
- </footer>
- <script src="script.js"></script>
-</body>
-</html>
-/* styles.css */
-body {
- font-family: Open Sans, sans-serif;
- margin: 0;
- padding: 0;
-}
-.container {
- max-width: 1200px;
- margin: 0 auto;
- padding: 20px;
-}
-.logo {
- font-size: 24px;
- font-weight: bold;
- margin-bottom: 10px;
-}
-nav ul {
- list-style: none;
- margin: 0;
- padding: 0;
- display: flex;
- justify-content: space-between;
-}
-nav li {
- margin-right: 20px;
-}
-nav a {
- text-decoration: none;
- color: #3498db;
-}
-nav a:hover {
- color: #f1c40f;
-}
-#main {
- background-color: #3498db;
- color: #ffffff;
- padding: 40px;
- text-align: center;
-}
-#main h1 {
- font-size: 36px;
- margin-bottom: 10px;
-}
-#main p {
- font-size: 18px;
- margin-bottom: 20px;
-}
-#main button {
- background-color: #f1c40f;
- color: #3498db;
- border: none;
- padding: 10px 20px;
- font-size: 18px;
- cursor: pointer;
-}
-#main button:hover {
- background-color: #ffffff;
- color: #3498db;
-}
-#how-it-works {
- background-color: #ffffff;
- padding: 40px;
-}
-#how-it-works h2 {
- font-size: 24px;
- margin-bottom: 10px;
-}
-#how-it-works p {
- font-size: 18px;
- margin-bottom: 20px;
-}
-#how-it-works img {
- width: 100%;
- height: auto;
- margin-bottom: 20px;
-}
-#benefits {
- background-color: #3498db;
- padding: 40px;
-}
-#benefits h2 {
- font-size: 24px;
- margin-bottom: 10px;
-}
-#benefits ul {
- list-style: none;
- margin: 0;
- padding: 0;
-}
-#benefits li {
- margin-bottom: 10px;
-}
-#benefits img {
- width: 100%;
- height: auto;
- margin-bottom: 20px;
-}
-#reviews {
- background-color: #ffffff;
- padding: 40px;
-}
-#reviews h2 {
- font-size: 24px;
- margin-bottom: 10px;
-}
-#reviews ul {
- list-style: none;
- margin: 0;
- padding: 0;
-}
-#reviews li {
- margin-bottom: 20px;
-}
-#reviews img {
- width: 100%;
- height: auto;
- margin-bottom: 10px;
-}
-footer {
- background-color: #3498db;
- padding: 10px;
- text-align: center;
- color: #ffffff;
-}
-// script.js
-document.addEventListener("DOMContentLoaded", function () {
- const button = document.querySelector("button");
- button.addEventListener("click", function () {
- // редирект на страницу продукта
- window.location.href = "product.html";
- });
-});
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">SmartLunch</div>
+            <ul class="nav-menu">
+                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="#how-it-works">Как это работает</a></li>
+                <li><a href="#business">Для бизнеса</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <button class="cta-button">Подключить систему</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Революция в общественном питании</h1>
+            <h2>Автоматическое распознавание блюд за 2 секунды</h2>
+            <button class="cta-button">Узнать больше</button>
+        </div>
+        <div class="hero-image">
+            <img src="hero-image.svg" alt="SmartLunch система">
+        </div>
+    </section>
+
+    <!-- Problem-Solution Section -->
+    <section class="problem-solution" id="benefits">
+        <div class="container">
+            <h2>Решаем реальные проблемы</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <h3>Очереди в столовой</h3>
+                    <p>Сокращаем время обслуживания до 2 секунд</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Человеческий фактор</h3>
+                    <p>Исключаем ошибки при расчете стоимости</p>
+                </div>
+                <div class="solution-card">
+                    <h3>Высокие затраты</h3>
+                    <p>Снижаем расходы на персонал</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>Как это работает</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Выбор блюд</h3>
+                    <p>Посетитель выбирает блюда на раздаче</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Распознавание</h3>
+                    <p>Система автоматически идентифицирует блюда</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Оплата</h3>
+                    <p>QR-код для быстрой оплаты заказа</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Business Benefits Section -->
+    <section class="business" id="business">
+        <div class="container">
+            <h2>Преимущества для бизнеса</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Экономия до 40%</h3>
+                    <p>На затратах на персонал и операционных расходах</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Рост выручки на 25%</h3>
+                    <p>За счет увеличения скорости обслуживания</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Аналитика</h3>
+                    <p>Детальная статистика продаж и поведения клиентов</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Точность 99.9%</h3>
+                    <p>В распознавании блюд и расчете стоимости</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology">
+        <div class="container">
+            <h2>Современные технологии</h2>
+            <div class="tech-features">
+                <div class="tech-feature">
+                    <h3>Искусственный интеллект</h3>
+                    <p>Продвинутые алгоритмы машинного обучения</p>
+                </div>
+                <div class="tech-feature">
+                    <h3>Компьютерное зрение</h3>
+                    <p>Точное распознавание блюд в реальном времени</p>
+                </div>
+                <div class="tech-feature">
+                    <h3>Безопасность данных</h3>
+                    <p>Защищенная обработка и хранение информации</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Начните оптимизацию вашего бизнеса уже сегодня</h2>
+            <p>Присоединитесь к революции в сфере общественного питания</p>
+            <button class="cta-button large">Подключить SmartLunch</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacts">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <p>Email: info@smartlunch.com</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Сообщение" required></textarea>
+                    <button type="submit" class="cta-button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">SmartLunch</div>
